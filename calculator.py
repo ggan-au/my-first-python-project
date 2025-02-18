@@ -23,3 +23,10 @@ print('Earned Amount:')
 [print(f"{item}: ${price}")for item, price in earnings.items()]
 income = sum([int(price) for price in earnings.values()])
 print(f"\nIncome: ${income}")
+
+staff_expenses = int(input("Staff expenses: "))
+other_expenses = int(input("Other expenses: "))
+net_income = income - (staff_expenses + other_expenses)
+print(f"Net income: ${net_income}")
+
+
