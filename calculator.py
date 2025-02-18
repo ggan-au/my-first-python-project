@@ -8,5 +8,4 @@ prices = {
 }
 
 print('Prices:')
-for item, price in prices.items():
-    print(f'{item}: {price}')
+[print(f'{item}: {price}') for item, price in prices.items()]
